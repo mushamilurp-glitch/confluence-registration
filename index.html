@@ -1,0 +1,118 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confluence '26 Registration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-glow"></div>
+
+  <section class="hero">
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+
+    <p class="present">SSF GMC THRISSUR PRESENTS</p>
+
+    <h1>CONFLUENCE '26</h1>
+
+    <p class="subtitle">
+      Vision • Faith • Purpose
+    </p>
+
+    <p class="description">
+      Where ideas converge, leadership evolves,
+      and journeys continue.
+    </p>
+
+    <div class="event-box">
+      <p>📅 20 MAY 2026, WEDNESDAY</p>
+      <p>📍 GOVERNMENT MEDICAL COLLEGE, THRISSUR</p>
+    </div>
+
+  </section>
+
+  <section class="form-section">
+
+    <div class="form-card">
+
+      <h2>Register Now</h2>
+
+      <form id="registrationForm">
+
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Course</label>
+          <select id="course" required>
+            <option value="">Select Course</option>
+            <option>MBBS</option>
+            <option>BDS</option>
+            <option>NURSING</option>
+            <option>PARAMEDICAL</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Graduate</label>
+          <select id="graduate" required>
+            <option value="">Select</option>
+            <option>UG</option>
+            <option>PG</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Batch (Admission Year)</label>
+          <select id="batch" required>
+            <option value="">Select Batch</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+          >
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Register
+        </button>
+
+      </form>
+
+      <p id="successMessage"></p>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
