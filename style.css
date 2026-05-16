@@ -1,6 +1,8 @@
 /* style.css */
 
 *{
+  width:100%;
+  overflow-x:hidden;
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -85,7 +87,7 @@ body{
   display:flex;
   justify-content:center;
   width:100%;
-  padding:40px 20px 60px;
+  padding:30px 12px 30px;
 }
 
 .form-card{
@@ -178,31 +180,46 @@ body{
 
 @media(max-width:768px){
 
+  *{
+    max-width: 100%;
+  }
+
   html,
   body{
     overflow-x:hidden;
     width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    overflow-y: auto;
   }
 
   body{
     min-height:auto;
+    font-family: 'Poppins',sans-serif;
+    background:linear-gradient(135deg,#22003d,#3c0075,#2b0052)
+    color:white;
+    position:relative;
   }
 
   .background-glow{
-    width:300px;
-    height:300px;
-    filter:blur(100px);
+    width:220px;
+    height:220px;
+    filter:blur(90px);
+    right: -50px;
   }
 
   .hero{
-    padding:55px 14px 25px;
+    width:100%;
+    padding:50px 14px 20px;
   }
 
   .main-title{
-    font-size:50px;
+    font-size:48px;
     line-height:1;
     white-space:nowrap;
-    margin-top:8px;
   }
 
   .present{
@@ -220,7 +237,7 @@ body{
   .description{
     font-size:16px;
     line-height:1.7;
-    margin-top:22px;
+    margin-top:20px;
     padding:0 4px;
   }
 
@@ -228,19 +245,20 @@ body{
 
     width:100%;
 
-    margin-top:32px;
+    margin-top:30px;
 
-    padding:22px 18px;
+    padding:20px 16px;
 
-    border-radius:22px;
+    border-radius:20px;
   }
 
   .event-box p{
-    font-size:15px;
-    line-height:1.8;
+    font-size:14px;
+    line-height:1.7;
   }
 
   .form-section{
+    width: 100%;
     padding:25px 10px 40px;
   }
 
@@ -248,25 +266,27 @@ body{
 
     width:100%;
 
-    max-width:none;
+    max-width:100%;
 
-    padding:36px 22px;
+    margin:0;
 
-    border-radius:26px;
+    padding:34px 20px;
+
+    border-radius:24px;
   }
 
   .form-card h2{
     font-size:34px;
-    margin-bottom:32px;
+    margin-bottom:30px;
   }
 
   .input-group{
-    margin-bottom:24px;
+    margin-bottom:22px;
   }
 
   .input-group label{
     font-size:15px;
-    margin-bottom:12px;
+    margin-bottom:10px;
   }
 
   .input-group input,
@@ -274,24 +294,23 @@ body{
 
     width:100%;
 
-    padding:18px;
+    padding:17px;
 
     font-size:16px;
 
-    border-radius:16px;
+    border-radius:14px;
   }
 
   .submit-btn{
 
     width:100%;
 
-    padding:18px;
+    padding:17px;
 
     font-size:17px;
 
-    border-radius:16px;
+    border-radius:14px;
 
-    margin-top:10px;
   }
 
   .wave{
