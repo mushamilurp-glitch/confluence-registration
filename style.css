@@ -10,7 +10,7 @@ body{
   font-family:'Poppins',sans-serif;
   background:linear-gradient(135deg,#22003d,#3c0075,#2b0052);
   color:white;
-  min-height:100vh;
+  min-height:auto;
   overflow-x:hidden;
   position:relative;
 }
@@ -84,12 +84,13 @@ body{
 .form-section{
   display:flex;
   justify-content:center;
-  padding:40px 20px 100px;
+  width:100%;
+  padding:40px 20px 60px;
 }
 
 .form-card{
   width:100%;
-  max-width:540px;
+  max-width:560px;
   background:rgba(255,255,255,0.08);
   border:1px solid rgba(255,255,255,0.15);
   backdrop-filter:blur(15px);
@@ -177,75 +178,86 @@ body{
 
 @media(max-width:768px){
 
+  html,
   body{
     overflow-x:hidden;
+    width:100%;
+  }
+
+  body{
+    min-height:auto;
+  }
+
+  .background-glow{
+    width:300px;
+    height:300px;
+    filter:blur(100px);
   }
 
   .hero{
-    padding:70px 22px 30px;
+    padding:55px 14px 25px;
   }
 
   .main-title{
-    font-size:52px;
-    white-space:nowrap;
+    font-size:50px;
     line-height:1;
-    margin-top:10px;
+    white-space:nowrap;
+    margin-top:8px;
   }
 
   .present{
-    font-size:12px;
+    font-size:11px;
     letter-spacing:3px;
-    margin-bottom:18px;
+    margin-bottom:16px;
   }
 
   .subtitle{
-    font-size:15px;
-    letter-spacing:4px;
-    margin-top:18px;
+    font-size:14px;
+    letter-spacing:3px;
+    margin-top:16px;
   }
 
   .description{
-    font-size:17px;
-    line-height:1.8;
-    margin-top:28px;
-    padding:0 10px;
+    font-size:16px;
+    line-height:1.7;
+    margin-top:22px;
+    padding:0 4px;
   }
 
   .event-box{
 
     width:100%;
-    max-width:420px;
 
-    padding:24px 22px;
+    margin-top:32px;
 
-    border-radius:24px;
+    padding:22px 18px;
 
-    margin-top:38px;
+    border-radius:22px;
   }
 
   .event-box p{
-    font-size:16px;
+    font-size:15px;
     line-height:1.8;
-    font-weight:500;
   }
 
   .form-section{
-    padding:35px 18px 70px;
+    padding:25px 10px 40px;
   }
 
   .form-card{
 
     width:100%;
-    max-width:430px;
 
-    padding:38px 24px;
+    max-width:none;
 
-    border-radius:28px;
+    padding:36px 22px;
+
+    border-radius:26px;
   }
 
   .form-card h2{
-    font-size:36px;
-    margin-bottom:35px;
+    font-size:34px;
+    margin-bottom:32px;
   }
 
   .input-group{
@@ -253,12 +265,14 @@ body{
   }
 
   .input-group label{
-    font-size:16px;
+    font-size:15px;
     margin-bottom:12px;
   }
 
   .input-group input,
   .input-group select{
+
+    width:100%;
 
     padding:18px;
 
@@ -268,6 +282,8 @@ body{
   }
 
   .submit-btn{
+
+    width:100%;
 
     padding:18px;
 
