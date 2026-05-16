@@ -39,11 +39,12 @@ body{
   margin-bottom:20px;
 }
 
-.hero h1{
+.main-title{
   font-family:'Montserrat',sans-serif;
   font-size:72px;
   font-weight:800;
   line-height:1;
+  white-space:nowrap;
 }
 
 .subtitle{
@@ -59,6 +60,9 @@ body{
   font-size:20px;
   line-height:1.8;
   opacity:0.9;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .event-box{
@@ -150,12 +154,6 @@ body{
   box-shadow:0 10px 25px rgba(255,255,255,0.2);
 }
 
-#successMessage{
-  margin-top:20px;
-  text-align:center;
-  font-weight:500;
-}
-
 .wave{
   position:absolute;
   border:2px solid rgba(255,255,255,0.15);
@@ -175,27 +173,76 @@ body{
   right:-150px;
 }
 
+/* MOBILE VIEW */
+
 @media(max-width:768px){
 
-  .hero h1{
-    font-size:48px;
+  .hero{
+    padding:60px 18px 40px;
+  }
+
+  .main-title{
+    font-size:38px;
+    white-space:nowrap;
+  }
+
+  .present{
+    font-size:11px;
+    letter-spacing:2px;
   }
 
   .subtitle{
-    font-size:14px;
-    letter-spacing:4px;
+    font-size:12px;
+    letter-spacing:3px;
   }
 
   .description{
-    font-size:16px;
+    font-size:15px;
+    line-height:1.7;
+    margin-top:24px;
   }
 
   .event-box{
     width:100%;
+    padding:20px;
+    border-radius:20px;
+  }
+
+  .event-box p{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .form-section{
+    padding:30px 16px 80px;
   }
 
   .form-card{
-    padding:30px 20px;
+    padding:28px 18px;
+    border-radius:24px;
+  }
+
+  .form-card h2{
+    font-size:26px;
+  }
+
+  .input-group label{
+    font-size:14px;
+  }
+
+  .input-group input,
+  .input-group select{
+    padding:14px;
+    font-size:14px;
+  }
+
+  .submit-btn{
+    padding:15px;
+    font-size:15px;
+  }
+
+  .wave{
+    display:none;
   }
 
 }

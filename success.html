@@ -27,14 +27,13 @@
       background:linear-gradient(135deg,#22003d,#3c0075,#2b0052);
       font-family:'Poppins',sans-serif;
       color:white;
-      overflow:hidden;
       padding:20px;
     }
 
     .success-card{
 
       width:100%;
-      max-width:500px;
+      max-width:520px;
 
       background:rgba(255,255,255,0.08);
       border:1px solid rgba(255,255,255,0.15);
@@ -65,32 +64,70 @@
     p{
       font-size:18px;
       line-height:1.8;
-      opacity:0.9;
+      opacity:0.92;
     }
 
     .whatsapp-btn{
 
-      display:inline-block;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+
+      width:100%;
 
       margin-top:35px;
 
-      padding:16px 28px;
+      padding:16px 24px;
 
       background:white;
 
-      color:#4b0082;
+      color:#25D366;
 
       text-decoration:none;
 
-      border-radius:14px;
+      border-radius:16px;
 
       font-weight:700;
+
+      font-size:17px;
 
       transition:0.3s;
     }
 
     .whatsapp-btn:hover{
       transform:translateY(-2px);
+    }
+
+    .whatsapp-icon{
+      font-size:24px;
+    }
+
+    @media(max-width:768px){
+
+      .success-card{
+        padding:35px 22px;
+        border-radius:24px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+
+      p{
+        font-size:15px;
+        line-height:1.7;
+      }
+
+      .whatsapp-btn{
+        font-size:15px;
+        padding:15px 18px;
+      }
+
+      .whatsapp-icon{
+        font-size:22px;
+      }
+
     }
 
   </style>
@@ -106,11 +143,11 @@
     <h1>Registration Successful</h1>
 
     <p>
-      Thank You for registering for CONFLUENCE '26 - an evening of vision, reflection and meaningful conversations.'
+      Thank You for registering for CONFLUENCE '26 — an evening of vision, reflection and meaningful conversations.
     </p>
 
-    <p style="margin-top:10px;">
-      Kindly join the official WhatsApp group below to stay updated with further announcements, schedules and important event communications.
+    <p style="margin-top:12px;">
+      Kindly join the official WhatsApp group below to stay updated with announcements, schedules and important event communications.
     </p>
 
     <a
@@ -118,6 +155,7 @@
       target="_blank"
       class="whatsapp-btn"
     >
+      <span class="whatsapp-icon">🟢</span>
       Join WhatsApp Group
     </a>
 
